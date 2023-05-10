@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Furniplan</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="username">Username</string>
+    <string name="Namalengkap">Nama Lengkap</string>
+    <string name="email">Email</string>
+    <string name="katasandi">Kata Sandi</string>
+    <string name="term_of_service">By signing up, you confirm that you agree to our Terms Of Service
+and have read and understood our Privacy Policy</string>
+
+    ///login//
+
+    <string name="Emailorusername">Email or Username</string>
+    <string name="password">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="lupakatasandi">Lupa kata Sandi</string>
+    <string name="Not">Not registered yet?</string>
+    <string name="Create">Create an Account</string>
+    <string name="login">Login</string>
+
+
+
+
+
+</resources>
