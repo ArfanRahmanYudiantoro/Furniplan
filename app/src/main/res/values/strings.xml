@@ -18,8 +18,36 @@ and have read and understood our Privacy Policy</string>
     <string name="Create">Create an Account</string>
     <string name="login">Login</string>
 
+    //get_started//
 
+    <string name="get">Dapatkan Furniture Impianmu!</string>
 
+    ///user_profile//
+
+    <string name="profile">Profile</string>
+    <string name="akmal">Alfian Akmal</string>
+
+    ///edit_profile///
+
+    <string name="update">Update Profile</string>
+    <string name="save_profile">Save Profile</string>
+    <string name="search">Pencarian</string>
+    <string name="Produk">Search Product Name</string>
+
+    ///Search//
+    <string name="terakhirkali">Terakhir Dicari</string>
+    <string name="Lampu">Lampu LED</string>
+    <string name="Kitchen">Kitchen Set</string>
+    <string name="Meja">Meja Dapur</string>
+    
+    
+    //Search_progress///
+    <string name="Search">Search</string>
+    <string name="lem">Lem</string>
+    <string name="saran">Saran Pencarian</string>
+    <string name="Lemari_baju">Lemari Baju</string>
+    <string name="Lemari_nakas">Lemari Nakas</string>
+    <string name="Lemari_MultiFungsi">Lemari MultiFungsi</string>
 
 
 </resources>
