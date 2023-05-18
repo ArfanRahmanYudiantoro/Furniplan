@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/photoImageView"
+            android:layout_width="415dp"
+            android:layout_height="270dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/namaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="32dp"
+            android:text="Kasur Dewasa"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/photoImageView" />
+
+        <TextView
+            android:id="@+id/hargaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:textSize="16sp"
+            android:textColor="@color/orange"
+            app:layout_constraintStart_toStartOf="@id/namaTextView"
+            app:layout_constraintTop_toBottomOf="@id/namaTextView"
+            android:text="Rp 300.000" />
+
+        <TextView
+            android:id="@+id/stokTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:textSize="12sp"
+
+            android:textColor="@color/green"
+            app:layout_constraintStart_toStartOf="@id/hargaTextView"
+            app:layout_constraintTop_toBottomOf="@id/hargaTextView"
+            android:text="Tersedia: 250" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/stokTextView" />
+
+        <TextView
+            android:id="@+id/judulDeskripsiTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintStart_toStartOf="@id/divider"
+            app:layout_constraintTop_toBottomOf="@id/divider"
+            android:text="Description Product" />
+
+        <TextView
+            android:id="@+id/isiDeskripsiTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintStart_toStartOf="@id/judulDeskripsiTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/judulDeskripsiTextView"
+            android:text="Kasur ini memiliki tingkat kekerasan medium, cocok digunakan oleh orang dewasa. \nSpesifikasi
+                \n• High quality bonnell spring
+                \n• High density foam
+                \n• Lapisan cover dengan kain quilting supersoft, yang lembut dan tidak panas
+                \n• Ketebalan: 21 cm
+                \n• Garansi 10 tahun (syarat dan ketentuan berlaku) \nxsjxksjsbs \ndhsjhdsudhsdh \ngshjgdhsdghs" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/isiDeskripsiTextView"/>
+
+        <Button
+            android:id="@+id/hubungiButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider2"
+            android:text="Hubungi Penjual" />
+    </androidx.constraintlayout.widget.ConstraintLayout >
+</ScrollView>

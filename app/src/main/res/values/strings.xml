@@ -39,8 +39,8 @@ and have read and understood our Privacy Policy</string>
     <string name="Lampu">Lampu LED</string>
     <string name="Kitchen">Kitchen Set</string>
     <string name="Meja">Meja Dapur</string>
-    
-    
+
+
     //Search_progress///
     <string name="Search">Search</string>
     <string name="lem">Lem</string>
@@ -48,6 +48,10 @@ and have read and understood our Privacy Policy</string>
     <string name="Lemari_baju">Lemari Baju</string>
     <string name="Lemari_nakas">Lemari Nakas</string>
     <string name="Lemari_MultiFungsi">Lemari MultiFungsi</string>
+    <string name="title_activity_custom">CustomActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 
 
 </resources>

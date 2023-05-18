@@ -4,4 +4,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="primary_blue">#03A9F4</color>
     <color name="abu">#A7ACAE</color>
+    <color name="orange">#FE3A30</color>
+    <color name="green">#3A9B7A</color>
+    <color name="light_green">#4FA688</color>
+    <color name="green_button">#3BBA27</color>
 </resources>
