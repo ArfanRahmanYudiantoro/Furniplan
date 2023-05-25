@@ -5,94 +5,45 @@
     android:layout_width="match_parent"
              android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageView10"
+    <TextView
+        android:id="@+id/labelTerakhirDilihat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/vector" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:fontFamily="@font/nunito_semibold"
-        android:text="@string/search"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView10"
-        app:layout_constraintTop_toTopOf="@+id/imageView10" />
-
-    <EditText
-        android:id="@+id/editTextText6"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="50dp"
-        android:background="@drawable/pencarian_btn"
-        android:ems="10"
-        android:hint="@string/Produk"
-        android:inputType="text"
-        android:text=""
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
-
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextText6"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText6"
-        app:layout_constraintTop_toTopOf="@+id/editTextText6"
-        app:srcCompat="@drawable/search_btn" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:text="@string/terakhirkali"
         android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="@+id/editTextText6"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText6" />
+        app:layout_constraintStart_toStartOf="@+id/searchView"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
     <ImageView
-        android:id="@+id/imageView14"
+        android:id="@+id/iconTerakhirDilihat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        app:layout_constraintStart_toStartOf="@+id/textView14"
-        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintStart_toStartOf="@+id/labelTerakhirDilihat"
+        app:layout_constraintTop_toBottomOf="@+id/labelTerakhirDilihat"
         app:srcCompat="@drawable/clock" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/lastProdukTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:fontFamily="@font/dm_sans_medium"
         android:text="@string/Lampu"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
-        app:layout_constraintStart_toEndOf="@+id/imageView14"
-        app:layout_constraintTop_toTopOf="@+id/imageView14" />
+        app:layout_constraintBottom_toBottomOf="@+id/iconTerakhirDilihat"
+        app:layout_constraintStart_toEndOf="@+id/iconTerakhirDilihat"
+        app:layout_constraintTop_toTopOf="@+id/iconTerakhirDilihat" />
 
     <ImageView
         android:id="@+id/imageView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView16"
+        app:layout_constraintBottom_toBottomOf="@+id/lastProdukTextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView16"
+        app:layout_constraintTop_toTopOf="@+id/lastProdukTextView"
         app:srcCompat="@drawable/x" />
 
     <ImageView
@@ -100,8 +51,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        app:layout_constraintStart_toStartOf="@+id/imageView14"
-        app:layout_constraintTop_toBottomOf="@+id/imageView14"
+        app:layout_constraintStart_toStartOf="@+id/iconTerakhirDilihat"
+        app:layout_constraintTop_toBottomOf="@+id/iconTerakhirDilihat"
         app:srcCompat="@drawable/clock" />
 
     <TextView
@@ -124,7 +75,7 @@
         android:layout_marginEnd="32dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView18"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/lastProdukTextView"
         app:srcCompat="@drawable/x" />
 
     <ImageView
@@ -156,5 +107,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView21"
         app:srcCompat="@drawable/x" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:queryHint="Cari Nama Produk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

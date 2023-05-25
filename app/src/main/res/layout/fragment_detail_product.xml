@@ -11,7 +11,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/photoImageView"
+            android:id="@+id/fotoProduk"
             android:layout_width="415dp"
             android:layout_height="270dp"
             android:scaleType="centerCrop"
@@ -21,7 +21,7 @@
             tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/namaTextView"
+            android:id="@+id/judulProdukTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -31,7 +31,7 @@
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/photoImageView" />
+            app:layout_constraintTop_toBottomOf="@id/fotoProduk" />
 
         <TextView
             android:id="@+id/hargaTextView"
@@ -41,8 +41,8 @@
             android:layout_marginEnd="24dp"
             android:textSize="16sp"
             android:textColor="@color/orange"
-            app:layout_constraintStart_toStartOf="@id/namaTextView"
-            app:layout_constraintTop_toBottomOf="@id/namaTextView"
+            app:layout_constraintStart_toStartOf="@id/judulProdukTextView"
+            app:layout_constraintTop_toBottomOf="@id/judulProdukTextView"
             android:text="Rp 300.000" />
 
         <TextView
@@ -112,7 +112,7 @@
             app:layout_constraintTop_toBottomOf="@id/isiDeskripsiTextView"/>
 
         <Button
-            android:id="@+id/hubungiButton"
+            android:id="@+id/btnHubungi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
