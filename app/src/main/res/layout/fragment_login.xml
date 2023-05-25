@@ -13,7 +13,7 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/furni_plan__1__1" />
+        app:srcCompat="@drawable/logo_furniplan" />
 
     <TextView
         android:id="@+id/labelUsername"
