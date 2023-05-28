@@ -50,5 +50,13 @@ and have read and understood our Privacy Policy</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
 
+    <string name="home">Home</string>
+    <string name="custom">Custom</string>
+    <string name="tagline_custom">Custom Furnituremu Sekarang Juga!</string>
+    <string name="custom_disini">Custom Disini</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+
 
 </resources>

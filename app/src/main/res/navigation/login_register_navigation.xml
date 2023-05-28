@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/navigation"
+    android:id="@+id/navigationHost"
     app:startDestination="@id/getStartedFragment">
 
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.celtic.furniplan.ui.login.LoginFragment"
-        android:label="LoginFragment"
-        tools:layout="@layout/fragment_login"/>
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_menu_activity"
+            app:destination="@id/menu_activity" />
+    </fragment>
     <fragment
         android:id="@+id/signUpFragment"
         android:name="com.celtic.furniplan.ui.sign_up.SignUpFragment"
-        android:label="SignUpFragment"
-        tools:layout="@layout/fragment_sign_up"/>
+        android:label="Sign Up"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/action_signUpFragment_to_menu_activity"
+            app:destination="@id/menu_activity" />
+    </fragment>
     <fragment
         android:id="@+id/getStartedFragment"
         android:name="com.celtic.furniplan.ui.get_started.GetStartedFragment"
-        android:label="GetStartedFragment"
         tools:layout="@layout/fragment_get_started">
         <action
             android:id="@+id/action_getStartedFragment_to_loginFragment2"
@@ -27,4 +35,5 @@
             android:id="@+id/action_getStartedFragment_to_signUpFragment2"
             app:destination="@id/signUpFragment" />
     </fragment>
+    <include app:graph="@navigation/menu_navigation" />
 </navigation>
