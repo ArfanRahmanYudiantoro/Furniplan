@@ -24,9 +24,8 @@
             android:id="@+id/judulProdukTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
             android:text="Kasur Dewasa"
             android:textSize="24sp"
             android:textStyle="bold"
@@ -60,69 +59,66 @@
 
         <View
             android:id="@+id/divider"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="1dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
             android:background="?android:attr/listDivider"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/stokTextView"
             app:layout_constraintTop_toBottomOf="@id/stokTextView" />
 
         <TextView
             android:id="@+id/judulDeskripsiTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Description Product"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="24dp"
             app:layout_constraintStart_toStartOf="@id/divider"
-            app:layout_constraintTop_toBottomOf="@id/divider"
-            android:text="Description Product" />
+            app:layout_constraintTop_toBottomOf="@id/divider" />
 
         <TextView
             android:id="@+id/isiDeskripsiTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="24dp"
-            app:layout_constraintStart_toStartOf="@id/judulDeskripsiTextView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/judulDeskripsiTextView"
+            android:layout_marginEnd="16dp"
             android:text="Kasur ini memiliki tingkat kekerasan medium, cocok digunakan oleh orang dewasa. \nSpesifikasi
                 \n• High quality bonnell spring
                 \n• High density foam
                 \n• Lapisan cover dengan kain quilting supersoft, yang lembut dan tidak panas
                 \n• Ketebalan: 21 cm
-                \n• Garansi 10 tahun (syarat dan ketentuan berlaku) \nxsjxksjsbs \ndhsjhdsudhsdh \ngshjgdhsdghs" />
+                \n• Garansi 10 tahun (syarat dan ketentuan berlaku) \nxsjxksjsbs \ndhsjhdsudhsdh \ngshjgdhsdghs"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/judulDeskripsiTextView"
+            app:layout_constraintTop_toBottomOf="@id/judulDeskripsiTextView" />
 
         <View
             android:id="@+id/divider2"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="1dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
             android:background="?android:attr/listDivider"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/isiDeskripsiTextView"/>
+            app:layout_constraintStart_toStartOf="@+id/isiDeskripsiTextView"
+            app:layout_constraintTop_toBottomOf="@id/isiDeskripsiTextView" />
 
         <Button
             android:id="@+id/btnHubungi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="24dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Hubungi Penjual"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/divider2"
-            android:text="Hubungi Penjual" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider2" />
     </androidx.constraintlayout.widget.ConstraintLayout >
 </ScrollView>

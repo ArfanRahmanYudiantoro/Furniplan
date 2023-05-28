@@ -27,6 +27,7 @@
     <fragment
         android:id="@+id/getStartedFragment"
         android:name="com.celtic.furniplan.ui.get_started.GetStartedFragment"
+        android:label="Furniplan"
         tools:layout="@layout/fragment_get_started">
         <action
             android:id="@+id/action_getStartedFragment_to_loginFragment2"

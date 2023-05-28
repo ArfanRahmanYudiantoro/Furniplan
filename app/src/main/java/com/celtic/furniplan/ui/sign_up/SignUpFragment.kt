@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
+import com.celtic.furniplan.R
 import com.celtic.furniplan.databinding.FragmentSignUpBinding
 
 class SignUpFragment: Fragment() {
@@ -18,6 +20,14 @@ class SignUpFragment: Fragment() {
     ): View? {
         binding = FragmentSignUpBinding.inflate(layoutInflater, container, false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        binding.btnSignUp.setOnClickListener {
+            it.findNavController().navigate(
+                R.id.action_signUpFragment_to_menu_activity
+            )
+        }
     }
 
 }

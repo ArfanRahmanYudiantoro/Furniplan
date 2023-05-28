@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
+import com.celtic.furniplan.R
 import com.celtic.furniplan.databinding.FragmentLoginBinding
 
 class LoginFragment: Fragment() {
@@ -17,5 +19,13 @@ class LoginFragment: Fragment() {
     ): View? {
         binding = FragmentLoginBinding.inflate(layoutInflater, container, false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        binding.btnLogin.setOnClickListener {
+            it.findNavController().navigate(
+                R.id.action_loginFragment_to_menu_activity
+            )
+        }
     }
 }
