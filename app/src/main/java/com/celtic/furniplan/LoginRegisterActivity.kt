@@ -1,5 +1,6 @@
 package com.celtic.furniplan
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
@@ -14,6 +15,7 @@ class LoginRegisterActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login_register)
         navController = findNavController(R.id.navLoginRegisterFragment)
         NavigationUI.setupActionBarWithNavController(this, navController)
+
     }
     override fun onSupportNavigateUp(): Boolean {
         return navController.navigateUp()
