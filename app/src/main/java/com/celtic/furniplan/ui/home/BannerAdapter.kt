@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.celtic.furniplan.databinding.BannerItemBinding
 import com.celtic.furniplan.model.Banner
 
-class HomeAdapter(private val data: List<Banner>) : RecyclerView.Adapter<HomeAdapter.ViewHolder>() {
+class BannerAdapter(private val data: List<Banner>) : RecyclerView.Adapter<BannerAdapter.ViewHolder>() {
     class ViewHolder(
         private val binding: BannerItemBinding
     ) : RecyclerView.ViewHolder(binding.root) {

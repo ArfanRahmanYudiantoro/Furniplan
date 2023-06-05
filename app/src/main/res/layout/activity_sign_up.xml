@@ -5,77 +5,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/labelUsername"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/username"
-        android:textColor="@color/abu"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/logo_furniplan"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextUsername"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="24dp"
-        android:background="@drawable/shape"
-        android:ems="10"
-        android:hint="@string/username"
-        android:inputType="text"
-        android:text=""
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/labelUsername"
-        app:layout_constraintTop_toBottomOf="@+id/labelUsername" />
-
-    <TextView
-        android:id="@+id/labelNamaLengkap"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/nama_lengkap"
-        android:textColor="@color/abu"
-        app:layout_constraintStart_toStartOf="@+id/editTextUsername"
-        app:layout_constraintTop_toBottomOf="@+id/editTextUsername" />
-
-    <EditText
-        android:id="@+id/editTextNamaLengkap"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/shape"
-        android:ems="10"
-        android:hint="@string/nama_lengkap"
-        android:inputType="text"
-        android:text=""
-        app:layout_constraintEnd_toEndOf="@+id/editTextUsername"
-        app:layout_constraintStart_toStartOf="@+id/labelNamaLengkap"
-        app:layout_constraintTop_toBottomOf="@+id/labelNamaLengkap" />
 
     <TextView
         android:id="@+id/labelEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:text="@string/email"
         android:textColor="@color/abu"
-        app:layout_constraintStart_toStartOf="@+id/editTextNamaLengkap"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNamaLengkap" />
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
         android:id="@+id/editTextEmail"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/shape"
         android:ems="10"
         android:hint="@string/email"
         android:inputType="text"
         android:text=""
-        app:layout_constraintEnd_toEndOf="@+id/editTextNamaLengkap"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/labelEmail"
         app:layout_constraintTop_toBottomOf="@+id/labelEmail" />
 
@@ -107,8 +68,8 @@
         android:layout_width="280dp"
         android:layout_height="50dp"
         android:layout_marginTop="24dp"
-        android:text="@string/sign_up"
         android:backgroundTint="@color/primary_blue"
+        android:text="@string/sign_up"
         app:layout_constraintEnd_toEndOf="@+id/editTextPassword"
         app:layout_constraintStart_toStartOf="@+id/editTextPassword"
         app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />

@@ -5,13 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <SearchView
         android:id="@+id/searchBar"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="42dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:queryHint="Cari Produk . ."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,11 +24,35 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchBar"
+        tools:listitem="@layout/banner_item" />
+
+    <!--   kategori     -->
+    <TextView
+        android:id="@+id/plcKategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Kategori"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bannerRecyclerView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/kategoriRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/banner_item"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plcKategori"
+        tools:listitem="@layout/kategori_item" />
 
 
     <!--    <androidx.recyclerview.widget.RecyclerView-->

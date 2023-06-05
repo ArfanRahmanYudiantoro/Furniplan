@@ -7,8 +7,8 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="109dp"
-        android:layout_height="110dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -16,31 +16,30 @@
         app:srcCompat="@drawable/logo_furniplan" />
 
     <TextView
-        android:id="@+id/labelUsername"
+        android:id="@+id/labelEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
-        android:text="@string/username"
+        android:text="@string/email"
         android:textColor="@color/abu"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/logo"
         app:layout_constraintTop_toBottomOf="@+id/logo" />
 
 
     <EditText
-        android:id="@+id/editTextUsername"
+        android:id="@+id/editTextEmail"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/shape"
         android:ems="10"
-        android:hint="@string/username"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:text=""
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/labelUsername"
-        app:layout_constraintTop_toBottomOf="@+id/labelUsername" />
+        app:layout_constraintStart_toStartOf="@+id/labelEmail"
+        app:layout_constraintTop_toBottomOf="@+id/labelEmail" />
 
     <TextView
         android:id="@+id/labelKataSandi"
@@ -49,20 +48,19 @@
         android:layout_marginTop="16dp"
         android:text="@string/kata_sandi"
         android:textColor="@color/abu"
-        app:layout_constraintStart_toStartOf="@+id/editTextUsername"
-        app:layout_constraintTop_toBottomOf="@+id/editTextUsername" />
+        app:layout_constraintStart_toStartOf="@+id/editTextEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
 
     <EditText
         android:id="@+id/formPassword"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
         android:background="@drawable/shape"
         android:ems="10"
         android:hint="@string/kata_sandi"
         android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextEmail"
         app:layout_constraintStart_toStartOf="@+id/labelKataSandi"
         app:layout_constraintTop_toBottomOf="@+id/labelKataSandi" />
 
@@ -80,10 +78,10 @@
         android:layout_width="300dp"
         android:layout_height="48dp"
         android:layout_marginTop="32dp"
-        android:text="@string/login"
         android:backgroundTint="@color/primary_blue"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/login"
+        app:layout_constraintEnd_toEndOf="@+id/formPassword"
+        app:layout_constraintStart_toStartOf="@+id/linkForgotPassword"
         app:layout_constraintTop_toBottomOf="@+id/linkForgotPassword" />
 
     <TextView
@@ -96,7 +94,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
 
     <TextView
-        android:id="@+id/linkCreateAccount"
+        android:id="@+id/textViewBelumPunyaAkun"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
