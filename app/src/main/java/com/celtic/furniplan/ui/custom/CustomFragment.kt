@@ -1,5 +1,7 @@
 package com.celtic.furniplan.ui.custom
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -17,5 +19,20 @@ class CustomFragment: Fragment(){
     ): View? {
         binding = FragmentCustomBinding.inflate(layoutInflater, container, false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        binding.btnCustom.setOnClickListener {
+            val phoneNumber = "+62895389940448"
+            chatWhatsApp(phoneNumber)
+        }
+    }
+
+    fun chatWhatsApp(number: String) {
+        val phoneNumber = number.replace("+", "").replace(" ", "")
+        val url = "https://api.whatsapp.com/send?phone=$phoneNumber"
+        val i = Intent(Intent.ACTION_VIEW)
+        i.data = Uri.parse(url)
+        startActivity(i)
     }
 }
