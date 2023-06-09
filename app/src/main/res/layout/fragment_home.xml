@@ -9,21 +9,29 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <SearchView
-            android:id="@+id/searchBar"
-            android:layout_width="match_parent"
-            android:layout_height="42dp"
+        <com.google.android.material.card.MaterialCardView
+            android:id="@id/searchBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
-            android:queryHint="Cari Produk . ."
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
+
+            <SearchView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:iconifiedByDefault="false"
+                android:queryBackground="@android:color/transparent"
+                android:queryHint="Cari Produk . ." />
+
+        </com.google.android.material.card.MaterialCardView>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/bannerRecyclerView"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:orientation="horizontal"
@@ -42,10 +50,12 @@
             android:layout_marginTop="8dp"
             android:text="Kategori"
             android:textSize="16sp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/bannerRecyclerView" />
 
         <HorizontalScrollView
+            android:id="@+id/layoutKategori"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
@@ -57,7 +67,6 @@
 
             <!-- Layout Kategori -->
             <LinearLayout
-                android:id="@+id/layoutKategori"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content">
 
@@ -155,8 +164,8 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
-                    app:cardElevation="1dp"
                     app:cardCornerRadius="8dp"
+                    app:cardElevation="1dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@id/cardKursi"
                     app:layout_constraintTop_toTopOf="parent">
@@ -198,8 +207,8 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
-                    app:cardElevation="1dp"
                     app:cardCornerRadius="8dp"
+                    app:cardElevation="1dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@id/cardSofa"
                     app:layout_constraintTop_toTopOf="parent">
@@ -242,8 +251,8 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="16dp"
                     android:layout_marginBottom="8dp"
-                    app:cardElevation="1dp"
                     app:cardCornerRadius="8dp"
+                    app:cardElevation="1dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@id/cardLampu"
@@ -283,6 +292,31 @@
 
 
         </HorizontalScrollView>
+
+        <!--Best Seller-->
+        <TextView
+            android:id="@+id/plcBestSeller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Best Seller"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutKategori" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/bestSellerRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/plcBestSeller"
+            tools:listitem="@layout/best_seller_item" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
