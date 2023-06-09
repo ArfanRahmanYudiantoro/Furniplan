@@ -1,55 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginStart="24dp"
+    android:layout_marginEnd="24dp"
+    android:layout_marginVertical="8dp"
+    android:layout_marginHorizontal="16dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/iconMenu"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="24dp"
-        android:contentDescription="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/account_circle_24px_outlined" />
 
-    <TextView
-        android:id="@+id/judulProdukTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/iconMenu"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Edit Profile" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/labelMenuTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="16dp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/judulProdukTextView"
-        app:layout_constraintTop_toBottomOf="@+id/judulProdukTextView"
-        app:layout_constraintVertical_bias="0.0"
-        tools:text="Last update yesterday" />
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iconMenu"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="center"
+            android:src="@drawable/account_circle_24px_outlined"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
 
-    <ImageView
-        android:id="@+id/icNavigate"
-        android:layout_width="16dp"
-        android:layout_height="16dp"
-        android:layout_marginEnd="24dp"
-        android:background="@drawable/baseline_arrow_forward_ios_24"
-        app:layout_constraintBottom_toBottomOf="@+id/labelMenuTextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/judulProdukTextView" />
+        <TextView
+            android:id="@+id/namaMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iconMenu"
+            android:layout_alignBottom="@id/iconMenu"
+            android:layout_marginStart="24dp"
+            android:layout_toEndOf="@id/iconMenu"
+            android:text="Edit Profile"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/iconMenu"
+            app:layout_constraintStart_toEndOf="@+id/iconMenu"
+            app:layout_constraintTop_toTopOf="@+id/iconMenu"
+            app:layout_constraintVertical_bias="0.5" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/icNavigate"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignTop="@id/namaMenu"
+            android:layout_alignBottom="@id/namaMenu"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@id/namaMenu"
+            android:src="@drawable/baseline_arrow_forward_ios_24"
+            app:layout_constraintBottom_toBottomOf="@+id/namaMenu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/namaMenu" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <com.google.android.material.imageview.ShapeableImageView-->
+<!--            android:id="@+id/iconMenu"-->
+<!--            android:layout_width="24dp"-->
+<!--            android:layout_height="24dp"-->
+<!--            android:src="@drawable/account_circle_24px_outlined"-->
+<!--            android:scaleType="center"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginBottom="16dp"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/namaMenu"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Edit Profile"-->
+<!--            android:textSize="16sp"-->
+<!--            android:layout_marginStart="48dp"-->
+<!--            android:layout_alignTop="@id/iconMenu"-->
+<!--            android:layout_alignBottom="@id/iconMenu"-->
+<!--            android:layout_toEndOf="@id/iconMenu"/>-->
+
+<!--        <com.google.android.material.imageview.ShapeableImageView-->
+<!--            android:id="@+id/icNavigate"-->
+<!--            android:layout_width="16dp"-->
+<!--            android:layout_height="16dp"-->
+<!--            android:layout_marginStart="165dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:layout_toEndOf="@id/namaMenu"-->
+<!--            android:layout_alignTop="@id/namaMenu"-->
+<!--            android:layout_alignBottom="@id/namaMenu"-->
+<!--            android:src="@drawable/baseline_arrow_forward_ios_24"-->
+
+
+
+
+
+<!--    </RelativeLayout>-->
+
+
+
+
+
+</androidx.cardview.widget.CardView>

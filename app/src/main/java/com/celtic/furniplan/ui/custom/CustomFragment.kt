@@ -23,7 +23,7 @@ class CustomFragment: Fragment(){
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding.btnCustom.setOnClickListener {
-            val phoneNumber = "+62895389940448"
+            val phoneNumber = "+6285156139429"
             chatWhatsApp(phoneNumber)
         }
     }
