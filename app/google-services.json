@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "471217351510",
+    "firebase_url": "https://furniplan-48d6c-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "furniplan-48d6c",
+    "storage_bucket": "furniplan-48d6c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471217351510:android:af17dcf70a4b791e5f04f7",
+        "android_client_info": {
+          "package_name": "com.celtic.furniplan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471217351510-do57cqfllrne0ukdbt8aaalbrj0ff3d9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-a01DYrvAdfzFR0JGXJWXBWxEkX7KT-M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471217351510-do57cqfllrne0ukdbt8aaalbrj0ff3d9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
