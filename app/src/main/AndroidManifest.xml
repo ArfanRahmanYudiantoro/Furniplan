@@ -9,18 +9,22 @@
         android:icon="@drawable/logo_furniplan"
         android:label="@string/app_name"
         android:roundIcon="@drawable/logo_furniplan"
+        android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/Theme.Furniplan"
         tools:targetApi="31">
         <activity
             android:name=".EditProfileActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".DashboardActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".LoginActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,9 +34,6 @@
         <activity
             android:name=".SignUpActivity"
             android:exported="false" />
-        <activity
-            android:name=".GetStartedActivity"
-            android:exported="true"></activity>
 
         <meta-data
             android:name="preloaded_fonts"
