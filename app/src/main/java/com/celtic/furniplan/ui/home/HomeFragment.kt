@@ -7,8 +7,10 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.celtic.furniplan.databinding.FragmentHomeBinding
 import com.celtic.furniplan.model.Banners.getBannerData
+import com.celtic.furniplan.model.Produks
+import com.celtic.furniplan.model.Produks.getProdukData
 
-class HomeFragment: Fragment() {
+class HomeFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding
 
     override fun onCreateView(
@@ -24,12 +26,15 @@ class HomeFragment: Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 //        pemanggilan RV banner
-        with(binding.bannerRecyclerView){
+        with(binding.bannerRecyclerView) {
             adapter = BannerAdapter(getBannerData())
             setHasFixedSize(true)
         }
 
-//        pemanggilan RV kategori
-
+//        pemanggilan RV produk best seller
+        with(binding.bestSellerRecyclerView) {
+            adapter = CardProdukAdapter(getProdukData())
+            setHasFixedSize(true)
+        }
     }
 }
