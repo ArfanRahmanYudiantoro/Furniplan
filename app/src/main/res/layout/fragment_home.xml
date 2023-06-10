@@ -70,6 +70,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
+                android:paddingStart="16dp"
                 android:paddingTop="4dp"
                 android:paddingBottom="4dp">
 
@@ -78,7 +79,6 @@
                     android:id="@+id/cardMeja"
                     android:layout_width="80dp"
                     android:layout_height="104dp"
-                    android:layout_marginStart="16dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     app:cardCornerRadius="8dp"
@@ -97,10 +97,10 @@
                             android:layout_width="48dp"
                             android:layout_height="48dp"
                             android:src="@drawable/ic_meja"
-                            app:shapeAppearance="@style/rounderSquare"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:shapeAppearance="@style/rounderSquare" />
 
                         <TextView
                             android:layout_width="wrap_content"

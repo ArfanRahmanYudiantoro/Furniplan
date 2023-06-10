@@ -58,5 +58,8 @@ and have read and understood our Privacy Policy</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_main">MainActivity</string>
 
+    <!-- item clicked -->
+    <string name="message">%1$s diklik!</string>
+
 
 </resources>
