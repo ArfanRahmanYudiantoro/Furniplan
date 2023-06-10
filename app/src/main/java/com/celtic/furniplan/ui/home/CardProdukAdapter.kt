@@ -2,9 +2,7 @@ package com.celtic.furniplan.ui.home
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
-import com.celtic.furniplan.R
 import com.celtic.furniplan.databinding.CardProdukItemBinding
 import com.celtic.furniplan.model.Produk
 
@@ -17,11 +15,6 @@ class CardProdukAdapter(private val data: List<Produk>) :
             imageViewFotoProduk.setImageResource(produk.imageProduk)
             textViewNamaProduk.text = produk.namaProduk
             textViewHargaProduk.text = produk.hargaProduk
-
-            root.setOnClickListener {
-                val message = root.context.getString(R.string.message, produk.namaProduk)
-                Toast.makeText(root.context, message, Toast.LENGTH_LONG).show()
-            }
         }
     }
 
