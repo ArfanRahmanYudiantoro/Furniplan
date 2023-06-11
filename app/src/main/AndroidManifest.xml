@@ -14,7 +14,6 @@
         android:theme="@style/Theme.Furniplan"
         tools:targetApi="31">
         <activity
-<<<<<<< HEAD
             android:name=".SplashScreenActivity"
             android:exported="true"
             android:screenOrientation="portrait"
@@ -25,10 +24,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-=======
+
+        <activity
             android:name=".DetailProdukActivity"
-            android:exported="false" />
->>>>>>> ae8122c1ae17a14599326e5ac552c88e6507c9a7
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".EditProfileActivity"
             android:exported="false"
