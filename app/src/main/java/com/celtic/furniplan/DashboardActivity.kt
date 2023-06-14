@@ -29,7 +29,6 @@ class DashboardActivity : AppCompatActivity() {
                 R.id.homeFragment, R.id.customFragment, R.id.profileFragment
             )
         )
-        setupActionBarWithNavController(navController, appBarConfiguration)
         bottomNavigationView.setupWithNavController(navController)
     }
 }

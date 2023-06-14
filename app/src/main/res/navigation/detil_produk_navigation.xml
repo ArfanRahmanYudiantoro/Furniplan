@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detil_produk_navigation"
+    app:startDestination="@id/kasurFragment">
+    <fragment
+        android:id="@+id/kasurFragment"
+        android:name="com.celtic.furniplan.ui.detil_produk.KasurFragment"
+        android:label="KasurFragment"
+        tools:layout="@layout/fragment_detail_kasur"/>
+    <fragment
+        android:id="@+id/mejaFragment"
+        android:name="com.celtic.furniplan.ui.detil_produk.MejaFragment"
+        android:label="MejaFragment"
+        tools:layout="@layout/fragment_detail_meja"/>
+    <fragment
+        android:id="@+id/sofaFragment"
+        android:name="com.celtic.furniplan.ui.detil_produk.SofaFragment"
+        android:label="SofaFragment"
+        tools:layout="@layout/fragment_detail_sofa"/>
+</navigation>
