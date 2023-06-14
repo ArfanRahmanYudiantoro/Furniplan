@@ -52,5 +52,17 @@ class HomeFragment : Fragment() {
                 R.id.sofaFragment
             )
         }
+
+        binding.cardMeja.setOnClickListener {
+            findNavController().navigate(
+                R.id.kategoriMejaFragment
+            )
+        }
+
+        binding.cardSofa.setOnClickListener {
+            findNavController().navigate(
+                R.id.kategoriSofaFragment
+            )
+        }
     }
 }

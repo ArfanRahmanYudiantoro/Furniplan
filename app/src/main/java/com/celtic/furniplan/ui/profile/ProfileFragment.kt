@@ -31,10 +31,6 @@ class ProfileFragment: Fragment() {
         super.onViewCreated(view, savedInstanceState)
         firebaseAuth = FirebaseAuth.getInstance()
 
-        binding.btnEditProfile.setOnClickListener {
-            val intent = Intent(activity, EditProfileActivity::class.java)
-            startActivity(intent)
-        }
 
         binding.btnLogout.setOnClickListener {
             firebaseAuth.signOut()

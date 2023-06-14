@@ -8,13 +8,13 @@
 
     <ImageView
         android:id="@+id/imageViewFotoUser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/upload_photo" />
+        app:srcCompat="@drawable/baseline_account_circle_24" />
 
     <TextView
         android:id="@+id/textViewNamaUser"
@@ -22,69 +22,24 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/nunito_semibold"
-        android:text="@string/akmal"
+        android:text="Nama User"
         android:textSize="20sp"
 
         app:layout_constraintEnd_toEndOf="@+id/imageViewFotoUser"
         app:layout_constraintStart_toStartOf="@+id/imageViewFotoUser"
         app:layout_constraintTop_toBottomOf="@+id/imageViewFotoUser" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/btnEditProfile"
-        android:layout_width="0dp"
-        android:layout_height="84dp"
-        android:layout_marginTop="24dp"
-        android:background="?android:selectableItemBackground"
-
-        android:clickable="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewNamaUser">
-
-        <ImageView
-            android:id="@+id/ic_account"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:layout_marginStart="24dp"
-            android:src="@drawable/baseline_account_circle_24"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:tint="@color/primary_blue" />
-        <TextView
-            android:id="@+id/textViewEditProfile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:text="Edit Profile"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@+id/ic_account"
-            app:layout_constraintStart_toEndOf="@+id/ic_account"
-            app:layout_constraintTop_toTopOf="@+id/ic_account" />
-
-        <ImageView
-            android:layout_width="16dp"
-            android:layout_height="16dp"
-            android:layout_marginEnd="24dp"
-            android:src="@drawable/baseline_arrow_forward_ios_24"
-            app:layout_constraintBottom_toBottomOf="@+id/textViewEditProfile"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textViewEditProfile" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/btnLogout"
         android:layout_width="0dp"
         android:layout_height="84dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:background="?android:selectableItemBackground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnEditProfile">
+        app:layout_constraintTop_toBottomOf="@+id/textViewNamaUser">
 
         <ImageView
             android:id="@+id/ic_logout"

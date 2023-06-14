@@ -36,4 +36,14 @@
         android:name="com.celtic.furniplan.ui.detil_produk.SofaFragment"
         android:label="Sofa Minimalis"
         tools:layout="@layout/fragment_detail_sofa"/>
+    <fragment
+        android:id="@+id/kategoriMejaFragment"
+        android:name="com.celtic.furniplan.ui.kategori.KategoriMejaFragment"
+        android:label="KategoriMejaFragment"
+        tools:layout="@layout/fragment_kategori_meja"/>
+    <fragment
+        android:id="@+id/kategoriSofaFragment"
+        android:name="com.celtic.furniplan.ui.kategori.KategoriSofaFragment"
+        android:label="KategoriSofaFragment"
+        tools:layout="@layout/fragment_kategori_sofa"/>
 </navigation>
