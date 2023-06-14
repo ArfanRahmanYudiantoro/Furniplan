@@ -315,6 +315,7 @@
             app:layout_constraintTop_toBottomOf="@id/layoutKategori" />
 
         <HorizontalScrollView
+            android:id="@+id/layoutBestSeller"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -518,18 +519,17 @@
 
         </HorizontalScrollView>
 
-        <!--        <androidx.recyclerview.widget.RecyclerView-->
-        <!--            android:id="@+id/bestSellerRecyclerView"-->
-        <!--            android:layout_width="0dp"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_marginTop="4dp"-->
-        <!--            android:orientation="horizontal"-->
-        <!--            android:paddingStart="8dp"-->
-        <!--            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
-        <!--            app:layout_constraintEnd_toEndOf="parent"-->
-        <!--            app:layout_constraintStart_toStartOf="parent"-->
-        <!--            app:layout_constraintTop_toBottomOf="@id/plcBestSeller"-->
-        <!--            tools:listitem="@layout/card_produk_item" />-->
+        <ImageView
+            android:id="@+id/imageKursiMaung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/banner_kursimaung"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutBestSeller" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
